@@ -1,0 +1,182 @@
+
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Head, face and neck- NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="../health-a-to-z_v4.html" class="nhsuk-breadcrumb__link">Health A to Z</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="../browse-by-parts-of-the-body.html" class="nhsuk-breadcrumb__link">Browse by parts of the body</a></li>
+
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="../browse-by-parts-of-the-body.html" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Browse by parts of the body
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+
+
+
+<!-- Live well content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Head, face and neck</h1>
+    </div>
+
+    <!-- Heading and lede text -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <p class="nhsuk-lede-text ">Includes eyes, ears, nose, mouth and throat.</p>
+      </div>
+    </div>
+
+
+    <article>
+
+      <h2 class="nhsuk-u-visually-hidden">Top tasks in Mental health conditions</h2>
+        <ul class="nhsuk-grid-row nhsuk-card-group nhsuk-u-padding-top-0">
+
+          <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable ">
+              <div class="nhsuk-card__content">
+                <a class="nhsuk-card__link nhsuk-heading-xs" href="">
+                  Find a dentist
+                </a>
+              </div>
+            </div>
+          </li>
+
+          
+          <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable ">
+              <div class="nhsuk-card__content">
+                <a class="nhsuk-card__link nhsuk-heading-xs" href="">
+                  Find ear, nose & throat services
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable ">
+              <div class="nhsuk-card__content">
+                <a class="nhsuk-card__link nhsuk-heading-xs" href="">
+                  Find an NHS sight test
+                </a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+        <br>
+
+        <h2>Head, neck and throat</h2>
+      <div class="nhsuk-u-reading-width beta-hub-bottom-content">
+        <p><a href="">Brain tumours</a></p>
+        <p><a href="">Dizziness</a></p>
+        <p><a href="">Hair loss</a></p>
+        <p><a href="">Head injury and concussion</a></p>
+        <p><a href="">Head lice and nits</a></p>
+        <p><a href="">Headaches</a></p>
+        <p><a href="">Migraine</a></p>
+        <p><a href="">Neck pain</a></p>
+        <p><a href="">Transient ischaemic attack (TIA)</a></p>
+        <p><a href="">Vertigo</a></p>
+      </div>
+      <br>
+
+      <h2>Ears</h2>
+      <div class="nhsuk-u-reading-width beta-hub-bottom-content">
+        <p><a href="">Ear infections</a></p>
+        <p><a href="">Earache</a></p>
+        <p><a href="">Earwax build-up</a></p>
+        <p><a href="">Labyrinthitis and vestibular neuritis </a></p>
+        <p><a href="">Meniere's disease </a></p>
+        <p><a href="">Tinnitus</a></p>
+      </div>
+
+      <br>
+
+      <h2>Eyes</h2>
+      <div class="nhsuk-u-reading-width beta-hub-bottom-content">
+        <p><a href="">Blepharitis</a></p>
+        <p><a href="">Conjunctivitis</a></p>
+        <p><a href="">Eyelid problems</a></p>
+        <p><a href="">Stye</a></p>
+        <p><a href="">Twitching eyes and muscles</a></p>
+      </div>
+
+      <br>
+      <h2>Nose</h2>
+      <div class="nhsuk-u-reading-width beta-hub-bottom-content">
+        <p><a href="">Cararrh</a></p>
+        <p><a href="">COVID-19</a></p>
+        <p><a href="">Hay fever</a></p>
+        <p><a href="">Sinusitis</a></p>
+      </div>
+
+
+      <br>
+
+      <h2>Mouth</h2>
+      <div class="nhsuk-u-reading-width beta-hub-bottom-content">
+        <p><a href="">Cold sores</a></p>
+        <p><a href="">COVID-19</a></p>
+        <p><a href="">Dental abscess</a></p>
+        <p><a href="">Laryngitis</a></p>
+        <p><a href="">Mouth ulcers</a></p>
+        <p><a href="">Oral thrush </a></p>
+        <p><a href="">Scarlet fever</a></p>
+        <p><a href="">Sore or white tongue</a></p>
+        <p><a href="">Sore throat</a></p>
+        <p><a href="">Tonsilitis</a></p>
+        <p><a href="">Toothache</a></p>
+        <p><a href="">Wisdom tooth removal</a></p>
+      </div>
+
+    </article>
+
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}

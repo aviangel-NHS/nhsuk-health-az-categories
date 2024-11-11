@@ -1,0 +1,108 @@
+// Import NHS.UK frontend library
+@import 'node_modules/nhsuk-frontend/packages/nhsuk';
+
+// Components that are not in the NHS.UK frontend library
+@import 'components/list-border';
+@import 'components/related-nav';
+
+///////////////////////////////////////////
+// Add your custom CSS/Sass styles below...
+///////////////////////////////////////////
+  
+
+
+
+// A-Z Nav -------------------
+.letter-list a {
+    display: block;
+    border: 2px solid #005eb8;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 48px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 1.313rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.letter-list a:hover {
+    color: #fff;
+    background-color: #005eb8;
+}
+
+
+//.letter-list a:focus {
+//    color: #fff;
+//    background-color: #005eb8;
+//}
+
+.letter-list a:focus {
+    background-color: #ffeb3b;
+    color: #212b32;
+    outline: 4px solid transparent;
+    text-decoration: none;
+    border: 2px solid #212b32;
+}
+
+
+// Spacing below each letter section -------------------
+.nhsuk-card {
+    margin-bottom: 20px;
+
+}
+
+
+// Rotate action link arrow -------------------
+.arrow-rotate-up {
+    transform: rotate(-90deg);
+}
+
+
+// Change row background colour on hover -------------------
+.nhsuk-list--border li {
+    border-bottom: 1px solid #d8dde0;
+    padding: 16px 0 16px;
+    margin-bottom: 0px;
+    //background-color: #d8dde0;
+}
+
+.az-row li:hover {
+    border-bottom-color: #aeb7bd;
+    background-color: #eff6fd;
+    text-decoration: none;
+    border-bottom: 1px solid #aeb7bd;
+}
+
+
+.nhsuk-icon__chevron-left{
+    transform: rotate(90deg);
+}
+
+
+
+// Remove grey line right -------------------
+.nhsuk-details__text {
+    border-left: none;
+    margin-top: 8px;
+    padding: 16px;
+    padding-left: 0px;
+    
+}
+
+.row-between-letters {
+    margin-top: 28px;
+    margin-bottom: 16px;
+}
+
+//.nhsuk-main-wrapper {
+  //  padding-top: 48px;
+ //   padding-bottom: 48px;
+//}
+
+.h1-padding-top {
+    padding-top: 48px;
+    //padding-bottom: 48px; 
+}

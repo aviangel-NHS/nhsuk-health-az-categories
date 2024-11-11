@@ -1,0 +1,431 @@
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Live Well - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="../homepage" class="nhsuk-breadcrumb__link">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="../homepage" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Home
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Live well content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Health A to Z</h1>
+    </div>
+
+    <!-- Heading and lede text -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <p class="nhsuk-lede-text ">Find out about conditions, symptoms and treatments, including what to do and when to get help</p>
+      </div>
+    </div>
+
+    <article>
+
+    <!-- 
+      <h2 class="nhsuk-u-visually-hidden">Top tasks in Live Well</h2>
+      <ul class="nhsuk-grid-row nhsuk-card-group nhsuk-u-padding-top-0">
+      
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content">
+              <a class="nhsuk-card__link nhsuk-heading-xs" href="">
+                NHS advice about healthy living
+              </a>
+            </div>
+          </div>
+        </li>
+      
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content">
+              <a class="nhsuk-card__link nhsuk-heading-xs" href="">
+                Mental health
+              </a>
+            </div>
+          </div>
+        </li>
+
+    </ul>
+     -->
+
+
+      <ul class="nhsuk-grid-row nhsuk-card-group">
+
+        <!--  Browse by A to Z -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Browse by A to Z
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Find out what you are looking for from our A-Z list of conditions, treatments and procedures.</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Browse by life stages 
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Browse by life stages
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
+              </div>
+            </div>
+          </div>
+        </li>
+        -->
+
+        <!-- Medicines A-Z -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Medicines A to Z
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Find out how your medicine works, how and when to take it, and possible side effects</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+        <!-- Alcohol advice -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Services A to Z
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Use our service finder to find other health services</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+
+
+      </ul>
+
+<br>
+      <h2>Browse by parts of the body</h2>
+      <ul class="nhsuk-grid-row nhsuk-card-group">
+
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Eyes and sight
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>These organs help control your vision, allowing you to receive and process light and other visual details.   </p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!--  Browse by A to Z -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Ear, nose and throat
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>These interconnected areas of the head and neck control activities like breathing, speaking, hearing and swallowing.  </p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+        <!-- Medicines A-Z -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Mouth and teeth
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Find out how your medicine works, how and when to take it, and possible side effects</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+        <!-- Alcohol advice -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Skin, hair and nails
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>These important body parts help protect your organs and tissues and also regulate your internal body temperature</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+        <!-- Medicines A-Z -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Heart
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Lungs
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!--  Browse by A to Z -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Bladder and kidneys
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+
+
+        <!-- Alcohol advice -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+          <div class="nhsuk-card nhsuk-card--clickable ">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Gut health
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Information on gut and digestive system conditions.
+
+              </p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill=""/><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"/><path data-name="Path" d="M11.667 9.229L15.438 13"/></g></svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+
+
+      </ul>
+    
+
+      <br>
+
+      <h2>Browse by life stages</h2>
+
+      <ul class="nhsuk-grid-row nhsuk-card-group">
+
+        <!-- Bone health -->
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+          <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Contraception
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>A guide to everything you need to know about caring for a baby</p></div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Healthy teeth and gums -->
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+          <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Pregnancy
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>This guide includes all you need to know about trying for a baby, pregnancy, labour and birth.</p></div>
+            </div>
+          </div>
+        </li>
+
+
+        
+        <!-- Healthy teeth and gums -->
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+          <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Baby
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>A guide to everything you need to know about caring for a baby.</p></div>
+            </div>
+          </div>
+        </li>
+
+        
+                <!-- Healthy teeth and gums -->
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+          <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Caring for children and young people
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Services, support and tips if you care for someone under 21, and moving to adult social services.</p></div>
+            </div>
+          </div>
+        </li>
+
+        
+        
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+          <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  Women's health
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Information and support on health, wellbeing, conditions and screening</p></div>
+            </div>
+          </div>
+        </li>
+
+
+        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item nhsuk-u-margin-bottom-4">
+          <div class="nhsuk-card nhsuk-card--clickable beta-card--plain">
+            <div class="nhsuk-card__content beta-card__content">
+              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                <a class="nhsuk-card__link" href="">
+                  End of life care
+                </a>
+              </h2>
+              <div class="nhsuk-card__description"><p>Information for people who are approaching the end of their life and people who want to plan for their end of life care.</p></div>
+            </div>
+          </div>
+        </li>
+
+
+
+
+      </ul>
+
+
+    </article>
+
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}

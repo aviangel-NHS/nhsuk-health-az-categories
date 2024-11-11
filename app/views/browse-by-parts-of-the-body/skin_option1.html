@@ -1,0 +1,134 @@
+
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Skin - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../health-a-to-z_v4">Health A to Z</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../browse-by-parts-of-the-body">Browse by parts of the body</a></li>
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="">
+      <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+      Health A to Z
+    </a>
+  </p>
+</nav>
+{% endblock %}
+
+<!--  -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Skin</h1>
+    </div>
+
+    <!-- Heading and lede text -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <p class="nhsuk-lede-text ">Includes rashes, moles, bites and stings, small cuts and grazes.</p>
+      </div>
+    </div>
+
+
+    <article>
+
+      <h2 class="nhsuk-u-visually-hidden">Top tasks in Mental health conditions</h2>
+        <ul class="nhsuk-grid-row nhsuk-card-group nhsuk-u-padding-top-0">
+
+          <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable ">
+              <div class="nhsuk-card__content">
+                <a class="nhsuk-card__link nhsuk-heading-xs" href="">
+                  Find dermatology services
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+            <div class="nhsuk-card nhsuk-card--clickable ">
+              <div class="nhsuk-card__content">
+                <a class="nhsuk-card__link nhsuk-heading-xs" href="">
+                  Find a pharmacy
+                </a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+      <div class="nhsuk-u-reading-width beta-hub-bottom-content">
+
+        <p><a href="">Atopic eczema</a></p>
+        <p><a href="">Cellulitis</a></p>
+        <p><a href="">Chickenpox</a></p>
+        <p><a href="">Corns and calluses</a></p>
+        <p><a href="">Heat rash (prickly heat)</a></p>
+        <p><a href="">Hives</a></p>
+        <p><a href="">Impetigo</a></p>
+        <p><a href="">Insect bites and stings</a></p>
+        <p><a href="">Itchy skin</a></p>
+        <p><a href="">Impetigo</a></p>
+        <p><a href="">Keratosis pilaris </a></p>
+        <p><a href="">Measles</a></p>
+        <p><a href="">Meningitis</a></p>
+        <p><a href="">Moles</a></p>
+        <p><a href="">Molluscum contagiosum</a></p>
+        <p><a href="">Mpox</a></p>
+        <p><a href="">Pityriasis rosea</a></p>
+        <p><a href="">Pityriasis versicolor </a></p>
+        <p><a href="">Pompholyx (dyshidrotic eczema)</a></p>
+        <p><a href="">Psoriasis</a></p>
+        <p><a href="">Rashes in babies and children</a></p>
+        <p><a href="">Ringworm</a></p>
+        <p><a href="">Rosacea</a></p>
+        <p><a href="">Scabies</a></p>
+        <p><a href="">Scarlet fever</a></p>
+        <p><a href="">Shingles</a></p>
+        <p><a href="">Skin cyst</a></p>
+        <p><a href="">Skin tags</a></p>
+        <p><a href="">Slapped cheek syndrome </a></p>
+        <p><a href="">Thrush in men and women</a></p>
+        <p><a href="">Warts and verrucas</a></p>
+
+      </div>
+
+    </article>
+
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}
