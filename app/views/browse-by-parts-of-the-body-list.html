@@ -1,0 +1,229 @@
+
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Browse by parts of the body - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="health-a-to-z_v4" class="nhsuk-breadcrumb__link">Health A to Z</a></li>
+
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Health A to Z
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Live well content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Browse by parts of the body</h1>
+    </div>
+
+    <article>
+
+
+      <ul class="nhsuk-grid-row nhsuk-card-group">
+
+    
+        <!-- Skin -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-full nhsuk-card-group__item">
+          <div class=" nhsuk-card--clickable nhsuk-card-restyle-no-card">
+            <div class="nhsuk-card__content beta-card__content nhsuk-grid-column-three-quarters nhsuk-card__content-restyle-no-card">
+              <h3 class="cards__sub-heading nhsuk-heading-xs">
+                <a class="nhsuk-card__link " href="browse-by-parts-of-the-body/skin_option1">
+                  Skin
+                </a>
+              </h3>
+              <div class="nhsuk-card__description"><p>Includes rashes, moles, bites and stings, small cuts and grazes. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="34" width="34">
+                  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+        <li class="beta-hub-main-topic nhsuk-grid-column-full nhsuk-card-group__item">
+          <div class="nhsuk-card--clickable nhsuk-card-restyle-no-card ">
+            <div class="nhsuk-card__content beta-card__content nhsuk-grid-column-three-quarters nhsuk-card__content-restyle-no-card">
+              <h3 class="cards__sub-heading nhsuk-heading-xs">
+                <a class="nhsuk-card__link" href="">
+                  Head, face and neck
+                </a>
+              </h3>
+              <div class="nhsuk-card__description"><p>Includes eyes, ears, nose, mouth and throat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="34" width="34">
+                  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Shoulders, arms and hands -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-full nhsuk-card-group__item">
+          <div class=" nhsuk-card--clickable nhsuk-card-restyle-no-card">
+            <div class="nhsuk-card__content beta-card__content nhsuk-grid-column-three-quarters nhsuk-card__content-restyle-no-card">
+              <h3 class="cards__sub-heading nhsuk-heading-xs">
+                <a class="nhsuk-card__link" href="">
+                  Shoulders, arms and hands 
+                </a>
+              </h3>
+              <div class="nhsuk-card__description"><p>Includes shoulders, arms, wrists, hands and fingers. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="34" width="34">
+                  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+
+        <!-- Chest and back -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-full nhsuk-card-group__item">
+          <div class=" nhsuk-card--clickable nhsuk-card-restyle-no-card">
+            <div class="nhsuk-card__content beta-card__content nhsuk-grid-column-three-quarters nhsuk-card__content-restyle-no-card">
+              <h3 class="cards__sub-heading nhsuk-heading-xs">
+                <a class="nhsuk-card__link" href="">
+                  Chest and back
+                </a>
+              </h3>
+              <div class="nhsuk-card__description"><p>Includes upper and lower back, breasts and nipples. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="34" width="34">
+                  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                </svg>                 
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Stomach and sides -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-full nhsuk-card-group__item">
+          <div class=" nhsuk-card--clickable nhsuk-card-restyle-no-card">
+            <div class="nhsuk-card__content beta-card__content nhsuk-grid-column-three-quarters nhsuk-card__content-restyle-no-card">
+              <h3 class="cards__sub-heading nhsuk-heading-xs">
+                <a class="nhsuk-card__link" href="">
+                  Stomach and sides
+                </a>
+              </h3>
+              <div class="nhsuk-card__description"><p>Includes pain or injury and feeling or being sick. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="34" width="34">
+                  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Genitals and bottom -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-full nhsuk-card-group__item">
+          <div class=" nhsuk-card--clickable nhsuk-card-restyle-no-card">
+            <div class="nhsuk-card__content beta-card__content nhsuk-grid-column-three-quarters nhsuk-card__content-restyle-no-card">
+              <h3 class="cards__sub-heading nhsuk-heading-xs">
+                <a class="nhsuk-card__link" href="">
+                  Genitals and bottom
+                </a>
+              </h3>
+              <div class="nhsuk-card__description"><p>Includes problems peeing or pooing and sexual health problems. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="34" width="34">
+                  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                </svg>              
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Hips, legs and feet -->
+        <li class="beta-hub-main-topic nhsuk-grid-column-full nhsuk-card-group__item">
+          <div class=" nhsuk-card--clickable nhsuk-card-restyle-no-card">
+            <div class="nhsuk-card__content beta-card__content nhsuk-grid-column-three-quarters nhsuk-card__content-restyle-no-card">
+              <h3 class="cards__sub-heading nhsuk-heading-xs">
+                <a class="nhsuk-card__link" href="">
+                  Hips, legs and feet 
+                </a>
+              </h3>
+              <div class="nhsuk-card__description"><p>Includes hips, groin, legs, ankles, feet and toes. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="34" width="34">
+                  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                </svg>                 
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="beta-hub-main-topic nhsuk-grid-column-full nhsuk-card-group__item">
+          <div class=" nhsuk-card--clickable nhsuk-card-restyle-no-card">
+            <div class="nhsuk-card__content beta-card__content nhsuk-grid-column-three-quarters nhsuk-card__content-restyle-no-card">
+              <h3 class="cards__sub-heading nhsuk-heading-xs">
+                <a class="nhsuk-card__link" href="">
+                  Browse by A to Z
+                </a>
+              </h3>
+              <div class="nhsuk-card__description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></div>
+              <div class="beta-hub-arrow">
+                <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" height="34" width="34">
+                  <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+                </svg>   
+              </div>
+            </div>
+          </div>
+        </li>
+        
+
+      </ul>
+
+   
+    </article>
+
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}

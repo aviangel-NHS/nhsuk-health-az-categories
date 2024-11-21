@@ -106,3 +106,26 @@
     padding-top: 48px;
     //padding-bottom: 48px; 
 }
+
+
+//Card resylt without white background and padding 
+.nhsuk-card-restyle-no-card {
+    padding-bottom: 0px;
+    background: none;
+    padding-top: 26px;
+    border-bottom: 1px solid #aeb7bd;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    width: 100%;
+}
+
+.nhsuk-card__content-restyle-no-card  {
+    padding: 0px;
+}
+
+.cards__sub-heading {
+    margin: 0 30px 10px 0;
+    font-size: 1.375rem;
+}
