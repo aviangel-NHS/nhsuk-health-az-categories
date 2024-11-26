@@ -1,0 +1,131 @@
+
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+Tummy and digestive symptoms - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-0" class="nhsuk-breadcrumb__link" href="../../homepage">Home</a>
+        </li>
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-1" class="nhsuk-breadcrumb__link" href="../Pregnancy">Pain</a>
+        </li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back">
+        <a class="nhsuk-breadcrumb__backlink" href="../Pregnancy">
+          <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+          Health A-Z
+        </a>
+      </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Main content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <!-- Heading and lede text -->
+    <div class="nhsuk-u-reading-width">
+      <h1>Tummy and digestive symptoms</h1>
+    </div>
+
+    <article>
+
+      <section class="nhsuk-u-reading-width">
+        <ul class="nhsuk-hub-key-links beta-hub-key-links">
+          
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Bloating
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Constipation
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Diarrhoea and vomiting
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Feeling sick (nausea)
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Flatulance
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                HEartburn and acid reflux
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Indigestion
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Reflux in babies
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Child pooing their pants (soiling)
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Stomach ache
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Unintentional weight loss
+              </a>
+            </li>
+
+        </ul>
+      </section>
+
+
+      <div class="nhsuk-u-reading-width nhsuk-u-margin-top-6 nhsuk-hub-after-key-links">
+      </div>
+
+
+    </article>
+
+  </div>
+</div>
+
+
+{% endblock %}
