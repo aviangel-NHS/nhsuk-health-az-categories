@@ -1,0 +1,115 @@
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Chest and breasts - NHS
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+      <ol class="nhsuk-breadcrumb__list">
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-0" class="nhsuk-breadcrumb__link" href="../../homepage">Home</a>
+        </li>
+        <li class="nhsuk-breadcrumb__item">
+          <a id="breadcrumb-link-1" class="nhsuk-breadcrumb__link" href="../Pregnancy">Health A-Z</a>
+        </li>
+      </ol>
+      <p class="nhsuk-breadcrumb__back">
+        <a class="nhsuk-breadcrumb__backlink" href="../Pregnancy">
+          <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+          Health A-Z
+        </a>
+      </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Main content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <br>
+    <!-- Heading and lede text -->
+    <div class="nhsuk-u-reading-width">
+      <h1>Chest and breasts</h1>
+    </div>
+
+    <article>
+
+      <section class="nhsuk-u-reading-width">
+        <ul class="nhsuk-hub-key-links beta-hub-key-links">
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Back pain
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Breast lump
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Breast pain
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Chest pain
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Heart palpitations
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Hiccups
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Nipple discharge
+              </a>
+            </li>
+
+            <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+              <a href="">
+                Shoulder pain
+              </a>
+            </li>
+
+          <!-- End -->
+
+        </ul>
+      </section>
+
+
+      <div class="nhsuk-u-reading-width nhsuk-u-margin-top-6 nhsuk-hub-after-key-links">
+      </div>
+
+
+    </article>
+
+  </div>
+</div>
+
+
+{% endblock %}
