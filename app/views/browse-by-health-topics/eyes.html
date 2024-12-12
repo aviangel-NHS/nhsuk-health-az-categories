@@ -1,0 +1,374 @@
+
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Eyes - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="../health-a-to-z_v4" class="nhsuk-breadcrumb__link">Health A to Z</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="../browse-by-health-topics" class="nhsuk-breadcrumb__link">Browse by health topics</a></li>
+
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="../browse-by-health-topics" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Browse by health topics
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Live well content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Eyes</h1>
+    </div>
+
+    <!-- Heading and lede text -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <p class="nhsuk-lede-text ">Includes eye symptoms and injuries, conditions affecting the eyes and vision, and tests and procedures</p>
+      </div>
+    </div>
+
+
+    <article>
+
+      <section class="nhsuk-u-reading-width">
+        <ul class="nhsuk-hub-key-links beta-hub-key-links">
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Age-related cataracts
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Age-related macular degeneration (AMD)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Amblyopia, see Lazy eye
+            </a>
+          </li>
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Astigmatism
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Black eye
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Blepharitis
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Blindness and vision loss
+            </a>
+          </li>
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Bulging eyes (exophthalmos)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Cataract surgery
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Cataracts (age-related), see Age-related cataracts
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Cataracts (children), see Childhood cataracts
+            </a>
+          </li>
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Childhood cataracts
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Colour blindness, see Colour vision deficiency (colour blindness)
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Colour vision deficiency (colour blindness)
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Conjunctivitis
+            </a>
+          </li>
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Cornea transplant
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Deafblindness
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Detached retina (retinal detachment)
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Diabetic eye screening
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Diabetic retinopathy
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Double vision
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Dry eyes
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Ectropion
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Eye cancer
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Eye cancer in children, see Retinoblastoma
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Eye flashes, see Floaters and flashes in the eyes
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Eye floaters, see Floaters and flashes in the eyes
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Eye infection (herpes), see Herpes simplex eye infections
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Eye injuries
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Eye tests for children
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Eyelid problems
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Floaters and flashes in the eyes
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Glaucoma
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Laser eye surgery and lens surgery
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Lazy eye
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Long-sightedness
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Macular degeneration (age-related), see Age-related macular degeneration (AMD)
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Macular hole
+            </a>
+          </li>   
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Myopia, see Short-sightedness (myopia)
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Red eye
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Retinal detachment, see Detached retina (retinal detachment)
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Retinal migraine
+            </a>
+          </li>   
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Retinoblastoma
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Short-sightedness (myopia)
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Squint
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Stye
+            </a>
+          </li>   
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Twitching eyes and muscles
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Uveitis
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Watering eyes
+            </a>
+          </li>
+
+        </ul>
+      </section>
+
+    </article>
+
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}
