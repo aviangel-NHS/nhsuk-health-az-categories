@@ -1,0 +1,558 @@
+
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Skin - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="../health-a-to-z_v4" class="nhsuk-breadcrumb__link">Health A to Z</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="../browse-by-health-topics" class="nhsuk-breadcrumb__link">Browse by health topics</a></li>
+
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="../browse-by-health-topics" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Browse by health topics
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Live well content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Skin</h1>
+    </div>
+
+    <!-- Heading and lede text -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <p class="nhsuk-lede-text ">Includes symptoms such as diarrhoea and stomach ache, bowel conditions, tests and treatments</p>
+      </div>
+    </div>
+
+    <article>
+      <section class="nhsuk-u-reading-width">
+        <ul class="nhsuk-hub-key-links beta-hub-key-links">
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Acid reflux in babies, see Reflux in babies
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Acute cholecystitis
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Acute pancreatitis
+              
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Anal fissure
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Anal fistula
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Appendicitis
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Barium enema
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Being sick, see Diarrhoea and vomiting
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Bleeding from the bottom (rectal bleeding)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Bloating
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Bowel incontinence
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Bowel polyps
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Cholecystitis (acute), see Acute cholecystitis
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Chronic pancreatitis
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Coeliac disease
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Colic
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Colonoscopy
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Colostomy
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Constipation
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Crohn's disease
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Cyclical vomiting syndrome
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Diarrhoea and vomiting
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Diarrhoea, see Diarrhoea and vomiting
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Diverticular disease and diverticulitis
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Dysphagia (swallowing problems)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Endoscopy
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Farting (flatulence)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Feeling sick (nausea)
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Flatulence, see Farting (flatulence)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Food allergy
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Food intolerance
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Food poisoning
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Gallbladder pain, see Acute cholecystitis
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Gallbladder removal
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Gallstones
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Gastrectomy
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Gastritis
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Gastroenteritis, see Diarrhoea and vomiting
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Gastro-oesophageal reflux disease (GORD), see Heartburn and acid reflux
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Gastroparesis
+              
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Gastroscopy
+            </a>
+          </li>
+
+          
+         
+          
+          
+          
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Heartburn and acid reflux
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Hiatus hernia
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Hiccups
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Hirschsprung's disease
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              How to collect a sample of poo (stool sample)
+            </a>
+          </li>
+        
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              IBD, see Inflammatory bowel disease
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              IBS, see Irritable bowel syndrome (IBS)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Ileostomy
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Indigestion
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Inflammatory bowel disease
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Irritable bowel syndrome (IBS)
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Lactose intolerance
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Malnutrition
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Mucositis
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Nausea, see Feeling sick (nausea)
+            </a>
+          </li>
+
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Pancreatitis (acute), see Acute pancreatitis
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Pancreatitis (chronic), see Chronic pancreatitis
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Peritonitis
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Poisoning
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Probiotics
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Rectal bleeding, see Bleeding from the bottom (rectal bleeding)
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Reflux in babies
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Soiling (child pooing their pants)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Stomach ache
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Stomach bug, see Diarrhoea and vomiting
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Stomach cancer
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Stomach ulcer
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Swallowing problems, see Dysphagia (swallowing problems)
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Tummy ache, see Stomach ache
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Tummy bug, see Diarrhoea and vomiting
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Ulcerative colitis
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Vomiting blood
+              
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Vomiting, see Diarrhoea and vomiting
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Wind, see Farting (flatulence)
+            </a>
+          </li>
+        
+
+        </ul>
+      </section>
+
+    </article>
+
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}

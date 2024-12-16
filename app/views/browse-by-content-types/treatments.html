@@ -1,0 +1,417 @@
+
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Treatments- NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="../health-a-to-z_v4" class="nhsuk-breadcrumb__link">Health A to Z</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="../browse-by-health-topics" class="nhsuk-breadcrumb__link">Browse by health topics</a></li>
+
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="../browse-by-health-topics" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Browse by health topics
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Live well content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>TTreatments</h1>
+    </div>
+
+    <!-- Heading and lede text -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <p class="nhsuk-lede-text ">Find out about non-surgical treatments such as physiotherapy and chemotherapy, including what happen</p>
+      </div>
+    </div>
+
+    <article>
+        <!-- 
+      Acupuncture
+      Alexander technique
+      Amputation
+      Carotid endarterectomy
+      Chemotherapy
+      Chiropractic
+      Circumcision in boys
+      Circumcision in men
+      Cognitive behavioural therapy (CBT)
+      Colostomy
+      Counselling
+      Cystoscopy
+      Dentures (false teeth)
+      Dialysis
+      Femoral hernia repair
+      Gallbladder removal
+      Gastrectomy
+      Home oxygen therapy
+      Hypnotherapy
+      Hysterectomy
+      Inguinal hernia repair
+      IVF
+      Knee ligament surgery
+      Knee replacement
+      Laser eye surgery and lens surgery
+      Lumbar decompression surgery
+      Mastectomy
+      Occupational therapy
+      Orthodontics
+      Osteopathy
+      Pacemaker implantation
+      Photodynamic therapy (PDT)
+      Physiotherapy
+      Plastic surgery
+      Psychiatry
+      Radiotherapy
+      Root canal treatment
+      Spleen problems and spleen removal
+      Stem cell and bone marrow transplants
+      Teeth whitening
+      TENS (transcutaneous electrical nerve stimulation)
+      Tracheostomy
+      Transurethral resection of the prostate (TURP)
+      Umbilical hernia repair
+      Urinary catheter
+      Weight loss surgery
+      Wisdom tooth removal
+ -->
+
+      <section class="nhsuk-u-reading-width">
+        <ul class="nhsuk-hub-key-links beta-hub-key-links">
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Acupuncture
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Alexander technique
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Amputation
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Carotid endarterectomy
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Chemotherapy
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Chiropractic
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Circumcision in boys
+      
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Circumcision in men
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Cognitive behavioural therapy (CBT)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Colostomy
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Counselling
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Cystoscopy
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Dentures (false teeth)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Dialysis
+              
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Femoral hernia repair
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Gallbladder removal
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Gastrectomy
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Home oxygen therapy
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Hypnotherapy
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Hysterectomy
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Inguinal hernia repair
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              IVF
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Knee ligament surgery
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Knee replacement
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Laser eye surgery and lens surgery
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Lumbar decompression surgery
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Mastectomy
+              
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Occupational therapy
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Orthodontics
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Osteopathy
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Pacemaker implantation
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Photodynamic therapy (PDT)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Physiotherapy
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Plastic surgery
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Psychiatry
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Radiotherapy
+            </a>
+          </li>
+      
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Root canal treatment
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Spleen problems and spleen removal
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Stem cell and bone marrow transplants
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Teeth whitening
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              TENS (transcutaneous electrical nerve stimulation)
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Tracheostomy
+            </a>
+          </li>
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Transurethral resection of the prostate (TURP)
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Umbilical hernia repair
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Urinary catheter
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Weight loss surgery
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Wisdom tooth removal
+            </a>
+          </li>
+
+          
+        </ul>
+      </section>
+
+    </article>
+
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}

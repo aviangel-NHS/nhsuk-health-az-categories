@@ -1,0 +1,695 @@
+
+{% extends 'template-nhs.html' %}
+
+<!-- some custom css padding for the page -->
+{% set mainClasses = 'nhsuk-u-padding-top-0' %}
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  Heart and circulation - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb beta-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a href="" class="nhsuk-breadcrumb__link">Home</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="../health-a-to-z_v4" class="nhsuk-breadcrumb__link">Health A to Z</a></li>
+      <li class="nhsuk-breadcrumb__item"><a href="../browse-by-health-topics" class="nhsuk-breadcrumb__link">Browse by health topics</a></li>
+
+    </ol>
+    <p class="nhsuk-breadcrumb__back">
+      <a href="../browse-by-health-topics" class="nhsuk-breadcrumb__backlink">
+        <span class="nhsuk-u-visually-hidden">Back to </span>Browse by health topics
+      </a>
+    </p>
+  </div>
+</nav>
+{% endblock %}
+
+
+<!-- Live well content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Heart and circulation</h1>
+    </div>
+
+    <!-- Heading and lede text -->
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <p class="nhsuk-lede-text ">Includes heart conditions, high and low blood pressure, blood clots, and tests and treatments</p>
+      </div>
+    </div>
+
+
+    <article>
+      <section class="nhsuk-u-reading-width">
+        <ul class="nhsuk-hub-key-links beta-hub-key-links">
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              AAA screening, see Abdominal aortic aneurysm screening
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              AAA, see Abdominal aortic aneurysm
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Abdominal aortic aneurysm
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Abdominal aortic aneurysm screening
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Aneurysm (abdominal aortic), see Abdominal aortic aneurysm
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Aneurysm (brain), see Brain aneurysm
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Angina
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Angiography
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Angioplasty, see Coronary angioplasty and stent insertion
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Aortic valve replacement
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Arrhythmia
+              
+            </a>
+          </li>
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Atherosclerosis
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Atrial fibrillation
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Behçet's disease
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Blood clots
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Blood pressure (low), see Low blood pressure (hypotension)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Blood pressure test
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Brugada syndrome
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              CABG, see Coronary artery bypass graft
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Cardiac catheterisation and coronary angiography
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Cardiomyopathy
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Cardiovascular disease
+            </a>
+          </li>
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Carotid endarterectomy
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Cavernoma
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Chest pain
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Cholesterol (high), see High cholesterol
+            </a>
+          
+          </li>
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Congenital heart disease
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Coronary angioplasty and stent insertion
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Coronary artery bypass graft
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Coronary heart disease
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Do not attempt cardiopulmonary resuscitation (DNACPR) decisions
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              DVT (deep vein thrombosis)
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Echocardiogram
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Ectopic beats, see Heart palpitations
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Electrocardiogram (ECG)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Electroencephalogram (EEG)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Endocarditis
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Giant cell arteritis, see Temporal arteritis
+              
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Granulomatosis with polyangiitis (GPA)
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Heart attack
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Heart block
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Heart bypass, see Coronary artery bypass graft
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Heart disease (coronary), see Coronary heart disease
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Heart failure
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Heart pain, see Chest pain
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Heart palpitations
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Heart rhythm problems, see Arrhythmia
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Heart valve problems, see Mitral valve problems
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Heart valve replacement, see Aortic valve replacement
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Hereditary haemorrhagic telangiectasia (HHT)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              High blood pressure
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              High cholesterol
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Hypertension, see High blood pressure
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Hypotension, see Low blood pressure (hypotension)
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Long QT syndrome
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Low blood pressure (hypotension)
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Mitral valve problems
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Pacemaker implantation
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Palpitations, see Heart palpitations
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Pericarditis
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Peripheral arterial disease (PAD)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Postural tachycardia syndrome (PoTS)
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Raynaud's
+            </a>
+          </li>
+          
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Stent insertion, see Coronary angioplasty and stent insertion  
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Supraventricular tachycardia (SVT)
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Temporal arteritis
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Varicose veins
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Vasculitis
+            </a>
+          </li>
+
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              Wolff-Parkinson-White syndrome
+            </a>
+          </li>
+
+
+
+
+
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+        
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+        
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              
+            </a>
+          </li>
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+        
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+        
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              
+            </a>
+          </li>
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+        
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+        
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              
+            </a>
+          </li>
+
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+        
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              
+            </a>
+          </li>
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+        
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+        
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              
+            </a>
+          </li>
+          
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+        
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+        
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              
+            </a>
+          </li>
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+        
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+        
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              
+            </a>
+          </li>
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+        
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+        
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              
+            </a>
+          </li>
+        
+          <li class="nhsuk-hub-key-links__list-item beta-hub-key-links__list-item">
+            <a href="">
+              
+            </a>
+          </li>
+        </ul>
+      </section>
+
+    </article>
+
+  </div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}

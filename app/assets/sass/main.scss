@@ -60,26 +60,27 @@
     transform: rotate(-90deg);
 }
 
-
-// Change row background colour on hover -------------------
-.nhsuk-list--border li {
-    border-bottom: 1px solid #d8dde0;
-    padding: 16px 0 16px;
-    margin-bottom: 0px;
-    //background-color: #d8dde0;
-}
-
-.az-row li:hover {
-    border-bottom-color: #aeb7bd;
-    background-color: #eff6fd;
-    text-decoration: none;
-    border-bottom: 1px solid #aeb7bd;
-}
-
-
 .nhsuk-icon__chevron-left{
     transform: rotate(90deg);
 }
+
+
+// Change row background colour on hover -------------------
+//.nhsuk-list--border li {
+//    border-bottom: 1px solid #d8dde0;
+//    padding: 16px 0 16px;
+//    margin-bottom: 0px;
+    //background-color: #d8dde0;
+//}
+
+//.az-row li:hover {
+//    border-bottom-color: #aeb7bd;
+//    background-color: #eff6fd;
+//    text-decoration: none;
+//    border-bottom: 1px solid #aeb7bd;
+//}
+
+
 
 
 
@@ -128,4 +129,9 @@
 .cards__sub-heading {
     margin: 0 30px 10px 0;
     font-size: 1.375rem;
+}
+
+// Remove bottom border on last element -------------------
+.nhsuk-list--border-none li {
+    border-bottom: 10px solid #d8dde0;
 }
