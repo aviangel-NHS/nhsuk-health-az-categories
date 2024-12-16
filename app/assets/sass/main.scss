@@ -134,4 +134,10 @@
 // Remove bottom border on last element -------------------
 .nhsuk-list--border-none li {
     border-bottom: 10px solid #d8dde0;
+
 }
+
+li:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
