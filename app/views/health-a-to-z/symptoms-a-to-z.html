@@ -1,0 +1,1490 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Symptoms A to Z - NHS
+{% endblock %}
+
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/nhsuk.css" rel="stylesheet">
+{% endblock %}
+
+<!-- NHS.UK header -->
+{% block header %}
+<header class="nhsuk-header" role="banner">
+  <div class="nhsuk-header__container">
+    <div class="nhsuk-header__logo">
+      <a class="nhsuk-header__link" href="/" aria-label="NHS homepage">      
+        <svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16" height="40" width="100">
+          <path class="nhsuk-logo__background" fill="#005eb8" d="M0 0h40v16H0z"></path>
+          <path class="nhsuk-logo__text" fill="#fff" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
+        </svg>
+      </a>
+    </div>
+    <div class="nhsuk-header__content" id="content-header">
+      <div class="nhsuk-header__search">
+        <div class="nhsuk-header__search-wrap" id="wrap-search">
+          <form class="nhsuk-header__search-form" id="search" action="https://www.nhs.uk/search/" method="get" role="search">
+            <label class="nhsuk-u-visually-hidden" for="search-field">Search the NHS website</label>
+            <input class="nhsuk-search__input" id="search-field" name="search-field" type="search" placeholder="Search" autocomplete="off">
+            <button class="nhsuk-search__submit" type="submit">
+              <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M19.71 18.29l-4.11-4.1a7 7 0 1 0-1.41 1.41l4.1 4.11a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42zM5 10a5 5 0 1 1 5 5 5 5 0 0 1-5-5z"></path>
+              </svg>
+              <span class="nhsuk-u-visually-hidden">Search</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nhsuk-navigation-container">
+    <nav class="nhsuk-navigation" id="header-navigation" role="navigation" aria-label="Primary navigation">
+      <ul class="nhsuk-header__navigation-list">
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="../health-a-to-z_v5">
+            Health A-Z
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="">
+            Live Well
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="">
+            Mental health
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="">
+            Care and support
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="">
+            Pregnancy
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="">
+            NHS services
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item nhsuk-header__navigation-item--home">
+          <a class="nhsuk-header__navigation-link" href="/">
+            Home
+          </a>
+        </li>
+        <li class="nhsuk-mobile-menu-container">
+          <button class="nhsuk-header__menu-toggle nhsuk-header__navigation-link" id="toggle-menu" aria-expanded="false">
+            <span class="nhsuk-u-visually-hidden">Browse</span>
+            More
+            <svg class="nhsuk-icon nhsuk-icon__chevron-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </button>
+          <ul class="nhsuk-header__drop-down nhsuk-header__drop-down--hidden"></ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+{% endblock %}
+
+{% block beforeContent %}
+<!-- Breadcrumbs -->
+<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+  <ol class="nhsuk-breadcrumb__list">
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="#">Home</a></li>
+    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../health-a-to-z_v5">Health A to Z</a></li>
+
+  </ol>
+  <p class="nhsuk-breadcrumb__back">
+    <a class="nhsuk-breadcrumb__backlink" href="../health-a-to-z_v5">
+      <span class="nhsuk-u-visually-hidden">Back to &nbsp;</span>
+        Health A to Z
+    </a>
+  </p>
+</nav>
+{% endblock %}
+
+
+<!-- Health A to Z content -->
+{% block content %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+
+    <div class="nhsuk-u-reading-width">
+      <h1>Symptoms A to Z</h1>
+    </div>
+
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <p class="nhsuk-lede-text ">Find out about a symptom, including causes, treatment and what to do.</p>
+      </div>
+    </div>
+
+    
+    <article>
+
+      <!-- A to Z navigation -->
+      <nav class="nhsuk-u-margin-bottom-4 nhsuk-u-margin-top-4" id="nhsuk-nav-a-z" role="navigation" aria-label="A to Z Navigation">
+        <ol class="nhsuk-list nhsuk-u-clear nhsuk-u-margin-0" role="list">
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#A">A</a>
+              </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#B">B</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#C">C</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#D">D</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#E">E</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#F">F</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+              <span class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block nhsuk-u-secondary-text-color">G</span>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#H">H</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#I">I</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#J">J</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#K">K</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#L">L</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#M">M</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#N">N</a>
+
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#O">O</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#P">P</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+              <span class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block nhsuk-u-secondary-text-color">Q</span>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#R">R</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#S">S</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#T">T</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#U">U</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#V">V</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+                <a class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block" href="#W">W</a>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+              <span class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block nhsuk-u-secondary-text-color">X</span>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+              <span class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block nhsuk-u-secondary-text-color">Y</span>
+            </li>
+          
+            <li class="nhsuk-u-margin-bottom-0 nhsuk-u-float-left nhsuk-u-margin-right-1">
+              <span class="nhsuk-u-font-size-22 nhsuk-u-padding-2 nhsuk-u-display-block nhsuk-u-secondary-text-color">Z</span>
+            </li>
+          
+        </ol>
+      </nav>
+
+
+        <!-- A -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="A">A</h2>
+  
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Anal pain
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Ankle pain
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+        
+        <!-- B -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="B">B</h2>
+  
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Back pain
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Bad breath
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Bedwetting in children
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Bleeding from the bottom (rectal bleeding)
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Bloating
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Blood in urine
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Blue or grey skin or lips (cyanosis)
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Blushing
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  Body odour (BO)
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Breast lumps
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Breast pain
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Bulging eyes (exophthalmos)
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- C -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="C">C</h2>
+  
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Chest pain
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Cough
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Coughing up blood (blood in phlegm)
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- D -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="D">D</h2>
+  
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Diarrhoea and vomiting  
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Dizziness
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Double vision
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Dry eyes
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Dry mouth
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Dysphagia (swallowing problems)
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- E -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="E">E</h2>
+  
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Earache
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Elbow and arm pain
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Erectile dysfunction (impotence)
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Excessive daytime sleepiness (hypersomnia)
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Excessive hair growth (hirsutism)
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Excessive sweating (hyperhidrosis)
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Excessive thirst
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Eyelid problems
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- F -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="F">F</h2>
+  
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Fainting
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Farting (flatulence)
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Feeling sick (nausea)
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Finger pain
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Floaters and flashes in the eyes
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- G -->
+        <div class="nhsuk-card nhsuk-card--feature ">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-heading-m" id="G">G</h2>
+            
+            <div class="nhsuk-list-panel__box nhsuk-list-panel__box--with-label">
+              <p class="nhsuk-list-panel--results-items__no-results">
+              There are currently no topics listed
+              </p>
+            </div>
+            
+          </div>
+        </div>
+  
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+        
+        <!-- H -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="H">H</h2>
+  
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Hair loss
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Hallucinations and hearing voices
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Headaches
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Hearing loss
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Heart palpitations 
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Heartburn and acid reflux
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Heel pain
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Hiccups
+                </a>
+              </li>
+              
+            <li>
+              <a href="">
+                High temperature (fever) in adults
+              </a>
+            </li>
+            
+            <li>
+              <a href="">
+                High temperature (fever) in children
+              </a>
+            </li>
+            
+            <li>
+              <a href="">
+                Hip pain in adults
+              </a>
+            </li>
+            
+            <li>
+              <a href="">
+                Hip pain in children (irritable hip)
+              </a>
+            </li>
+            
+            </ul>
+  
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- I -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="I">I</h2>
+  
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Indigestion
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Irregular periods
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Itchy bottom
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Itchy skin
+                </a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- J -->
+        <div class="nhsuk-card nhsuk-card--feature">
+        <div class="nhsuk-card__content nhsuk-card__content--feature">
+          <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="J">J</h2>
+
+          <ul class="nhsuk-list nhsuk-list--border az-row">
+            <li>
+              <a href="">
+                Joint pain
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- K -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="K">K</h2>
+
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Knee pain
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- L -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="L">L</h2>
+
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Leg cramps
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Limping in children
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Lost or changed sense of smell
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Low sex drive (loss of libido)
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Lumps
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- M -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="M">M</h2>
+
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Memory loss (amnesia)
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Metallic taste
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Missed or late periods
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- N -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="N">N</h2>
+
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Nail problems
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Neck pain
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Night sweats
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Nipple discharge
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- O -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="O">O</h2>
+
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Ovulation pain
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- P -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="P">P</h2>
+
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Pain in the back of the hand
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Pain in the ball of the foot
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Pain in the bottom of the foot
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Pain in the palm of the hand
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Pain in the top of the foot
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Paralysis
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Pelvic pain
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Penis lumps and spots
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  Period pain
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  Pins and needles
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Postmenopausal bleeding
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Priapism (painful erections)
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- Q -->
+        <div class="nhsuk-card nhsuk-card--feature ">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-heading-m" id="Q">Q</h2>
+            
+            <div class="nhsuk-list-panel__box nhsuk-list-panel__box--with-label">
+              <p class="nhsuk-list-panel--results-items__no-results">
+              There are currently no topics listed
+              </p>
+            </div>
+            
+          </div>
+        </div>
+  
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+
+        <!-- R -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="R">R</h2>
+
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Red eye
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Reflux in babies
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- S -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="S">S</h2>
+
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Shortness of breath
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Shoulder pain
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Smelly feet
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Smelly urine
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Snoring
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Soiling (child pooing their pants)
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Sore or dry lips
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Sore or white tongue
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Sore throat
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Stomach ache
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Stretch marks
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Sudden confusion (delirium)
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  Swollen ankles, feet and legs (oedema)
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Swollen arms and hands (oedema)
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  Swollen glands
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- T -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="T">T</h2>
+
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Tailbone (coccyx) pain
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Teeth grinding (bruxism)
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Testicle lumps and swellings
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Testicle pain
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Thumb pain
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Tinnitus
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Tiredness and fatigue
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Toe pain
+                </a>
+              </li>
+
+              <li>
+                <a href="">
+                  Toothache
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Tremor or shaking hands
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Twitching eyes and muscles
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- U -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="U">U</h2>
+
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Unintentional weight loss
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- V -->
+        <div class="nhsuk-card nhsuk-card--feature">
+            <div class="nhsuk-card__content nhsuk-card__content--feature">
+              <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="V">V</h2>
+    
+              <ul class="nhsuk-list nhsuk-list--border az-row">
+                <li>
+                  <a href="">
+                    Vaginal bleeding between periods or after sex
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="">
+                    Vaginal discharge
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="">
+                    Vaginal dryness
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="">
+                    Vomiting blood
+                  </a>
+                </li>
+                
+              </ul>
+    
+            </div>
+        </div>
+
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+        <!-- W -->
+        <div class="nhsuk-card nhsuk-card--feature">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-u-font-size-24" id="W">W</h2>
+
+            <ul class="nhsuk-list nhsuk-list--border az-row">
+              <li>
+                <a href="">
+                  Watering eyes
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  What to do if someone has a seizure (fit)
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Worms in humans
+                </a>
+              </li>
+              
+              <li>
+                <a href="">
+                  Wrist pain
+                </a>
+              </li>
+              
+            </ul>
+
+          </div>
+        </div>
+
+
+        <!-- X -->
+        <div class="nhsuk-card nhsuk-card--feature ">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-heading-m" id="X">X</h2>
+            
+            <div class="nhsuk-list-panel__box nhsuk-list-panel__box--with-label">
+              <p class="nhsuk-list-panel--results-items__no-results">
+              There are currently no topics listed
+              </p>
+            </div>
+            
+          </div>
+        </div>
+  
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+
+        <!-- Y -->
+        <div class="nhsuk-card nhsuk-card--feature ">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-heading-m" id="Y">Y</h2>
+            
+            <div class="nhsuk-list-panel__box nhsuk-list-panel__box--with-label">
+              <p class="nhsuk-list-panel--results-items__no-results">
+              There are currently no topics listed
+              </p>
+            </div>
+            
+          </div>
+        </div>
+  
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+
+        <!-- Z -->
+        <div class="nhsuk-card nhsuk-card--feature ">
+          <div class="nhsuk-card__content nhsuk-card__content--feature">
+            <h2 class="nhsuk-card__heading nhsuk-card__heading--feature nhsuk-heading-m" id="Z">Z</h2>
+            
+            <div class="nhsuk-list-panel__box nhsuk-list-panel__box--with-label">
+              <p class="nhsuk-list-panel--results-items__no-results">
+              There are currently no topics listed
+              </p>
+            </div>
+            
+          </div>
+        </div>
+  
+        <div class="nhsuk-back-to-top">
+          <a class="nhsuk-back-to-top__link" href="#nhsuk-nav-a-z">
+            Back to top
+          </a>
+        </div>
+
+    </article>
+
+    
+  </div>
+</div>
+{% endblock %}
+
+
+<!-- NHS.UK footer -->
+{% block footer %}
+<footer role="contentinfo">
+  <div class="nhsuk-footer-container">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <div class="nhsuk-footer">
+
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Home</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Health A to Z</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Live Well</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Mental health</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Care and support</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Accessibility statement</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Pregnancy</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">NHS services</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Coronavirus (COVID-19)</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">NHS App</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Find my NHS number</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Your health records</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">About the NHS</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Healthcare abroad</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Contact us</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Other NHS websites</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Profile editor login</a>
+          </li>
+        </ul>
+        <ul class="nhsuk-footer__list nhsuk-footer__meta">
+
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">About us</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Accessibility statement</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Our policies</a>
+          </li>
+          <li class="nhsuk-footer__list-item">
+            <a class="nhsuk-footer__list-item-link" href="#">Cookies</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="nhsuk-footer__copyright">© NHS England</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+{% endblock %}
+
+
+{% block pageScripts %}
+<script>
+  $( document ).ready(function() {
+    $('a[href=""], button.nhsuk-search__submit').click(function(e) {
+      e.preventDefault();
+    });
+  });
+</script>
+{% endblock %}
