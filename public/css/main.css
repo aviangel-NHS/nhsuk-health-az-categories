@@ -7807,3 +7807,11 @@ li:last-child {
   padding-top: 20px;
   padding-bottom: 48px;
 }
+
+.blue-view-all-row {
+  margin-top: -40px;
+}
+
+.a-z-blue-button-padding {
+  margin: 20px;
+}
