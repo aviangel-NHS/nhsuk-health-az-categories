@@ -7827,3 +7827,7 @@ li:last-child {
 .nhsuk-lede-text {
   margin-bottom: 30px;
 }
+
+.az-list-row-hover li:hover {
+  text-decoration: none;
+}
