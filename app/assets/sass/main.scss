@@ -170,8 +170,13 @@ li:last-child {
 
 // A-Z list hover state -------------------
 .az-list-row-hover li:hover {
+    text-decoration: none;
     //border-bottom-color: #aeb7bd;
     //background-color: #eff6fd;
-    a text-decoration: none;
     //border-bottom: 1px solid #aeb7bd;
 }
+
+
+//.nhsapp-card__link:hover {
+//    text-decoration: underline;
+//}
