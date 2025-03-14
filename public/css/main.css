@@ -7712,6 +7712,7 @@ b {
   }
 }
 
+/* margin-bottom: 24px; */
 .letter-list a {
   display: block;
   border: 2px solid #005eb8;
@@ -7725,6 +7726,10 @@ b {
   text-decoration: none;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+ol, ul, .nhsuk-list {
+  margin-bottom: 0px;
 }
 
 .letter-list a:hover {
@@ -7828,6 +7833,42 @@ li:last-child {
   margin-bottom: 30px;
 }
 
-.az-list-row-hover li:hover {
+.nhsuk-list--border li {
+  padding: 16px 0 16px;
+  margin-bottom: 0px;
+}
+
+.nhsapp-card__content {
+  flex-grow: 1;
+}
+
+.nhsapp-card__container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.row-between-letters .nhsapp-card .nhsapp-icon {
+  height: 28px;
+  width: 28px;
+}
+
+.nhsapp-card .nhsapp-icon {
+  flex: none;
+  fill: #005eb8;
+}
+
+.nhsapp-icon {
+  fill: #005eb8;
+  height: 28px;
+  width: 28px;
+}
+
+.nhsapp-card:hover .nhsapp-icon {
+  fill: #7c2855;
+}
+
+.nhsapp-card:hover .nhsapp-card__link {
+  color: #7c2855;
   text-decoration: none;
 }
